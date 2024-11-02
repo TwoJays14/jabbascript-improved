@@ -1,14 +1,15 @@
-<div class="navbar bg-base-100">
+<div class="navbar border-b-gray-400">
   <div class="flex-1">
     <a class="btn btn-ghost text-xl">Koding Kombat</a>
   </div>
-  <ul>
-    <li><a href=""></a></li>
+  <ul class="flex-1 justify-around">
+    <li><a class="capitalize">fighting</a></li>
+    <li><a class="capitalize">quest</a></li>
+    <li><a class="capitalize">leaderboard</a></li>
+    <li><a class="capitalize">login / register</a></li>
   </ul>
-  <div class="flex-none gap-2">
-    <div class="form-control">
-      <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-    </div>
+  @if (isLoggedIn()) {
+  <div class="flex-none gap-2.5">
     <div class="dropdown dropdown-end">
       <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
         <div class="w-10 rounded-full">
@@ -31,4 +32,7 @@
       </ul>
     </div>
   </div>
+  } @else {
+    <div></div>
+  }
 </div>
