@@ -9,7 +9,7 @@ import {LoginComponent} from "./pages/login/login.component";
 
 export const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'fighting', component: FightingComponent},
+  {path: 'fighting', loadComponent: () => import('./pages/fighting/fighting.component').then(m => m.FightingComponent)},
   {path: 'quest', component: QuestComponent},
   {path: 'leaderboard', component: LeaderboardComponent},
   {path: 'login', component: LoginComponent},
