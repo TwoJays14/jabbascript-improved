@@ -1,12 +1,13 @@
 <div class="navbar border-b-gray-400">
   <div class="flex-1">
-    <h1 class="btn btn-ghost text-xl">Koding Kombat</h1>
+    <img [ngSrc]="logoPath" width="32" height="32" alt="logo"/>
+    <a class="btn btn-ghost text-xl" routerLink="">Koding Kombat</a>
   </div>
   <ul class="flex-1 justify-around">
-    <li><a routerLink="/fighting" class="nav-item capitalize">fighting</a></li>
-    <li><a routerLink="/quest" class="nav-item capitalize">quest</a></li>
-    <li><a routerLink="/leaderboard" class="nav-item capitalize">leaderboard</a></li>
-    <li><a routerLink="/login" class="nav-item capitalize">login / register</a></li>
+    <li><a routerLink="/fighting" class="nav-item capitalize btn btn-ghost">fighting</a></li>
+    <li><a routerLink="/quest" class="nav-item capitalize btn btn-ghost">quest</a></li>
+    <li><a routerLink="/leaderboard" class="nav-item capitalize btn btn-ghost">leaderboard</a></li>
+    <li><a routerLink="/login" class="nav-item capitalize btn btn-ghost">login / register</a></li>
   </ul>
   @if (isLoggedIn()) {
   <div class="profile flex-none gap-2.5">
