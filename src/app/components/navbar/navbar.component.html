@@ -3,10 +3,10 @@
     <h1 class="btn btn-ghost text-xl">Koding Kombat</h1>
   </div>
   <ul class="flex-1 justify-around">
-    <li><a class="nav-item capitalize">fighting</a></li>
-    <li><a class="nav-item capitalize">quest</a></li>
-    <li><a class="nav-item capitalize">leaderboard</a></li>
-    <li><a class="nav-item capitalize">login / register</a></li>
+    <li><a routerLink="/fighting" class="nav-item capitalize">fighting</a></li>
+    <li><a routerLink="/quest" class="nav-item capitalize">quest</a></li>
+    <li><a routerLink="/leaderboard" class="nav-item capitalize">leaderboard</a></li>
+    <li><a routerLink="/login" class="nav-item capitalize">login / register</a></li>
   </ul>
   @if (isLoggedIn()) {
   <div class="profile flex-none gap-2.5">
