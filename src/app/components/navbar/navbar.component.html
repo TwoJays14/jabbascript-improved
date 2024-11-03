@@ -1,15 +1,15 @@
 <div class="navbar border-b-gray-400">
   <div class="flex-1">
-    <a class="btn btn-ghost text-xl">Koding Kombat</a>
+    <h1 class="btn btn-ghost text-xl">Koding Kombat</h1>
   </div>
   <ul class="flex-1 justify-around">
-    <li><a class="capitalize">fighting</a></li>
-    <li><a class="capitalize">quest</a></li>
-    <li><a class="capitalize">leaderboard</a></li>
-    <li><a class="capitalize">login / register</a></li>
+    <li><a class="nav-item capitalize">fighting</a></li>
+    <li><a class="nav-item capitalize">quest</a></li>
+    <li><a class="nav-item capitalize">leaderboard</a></li>
+    <li><a class="nav-item capitalize">login / register</a></li>
   </ul>
   @if (isLoggedIn()) {
-  <div class="flex-none gap-2.5">
+  <div class="profile flex-none gap-2.5">
     <div class="dropdown dropdown-end">
       <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
         <div class="w-10 rounded-full">
