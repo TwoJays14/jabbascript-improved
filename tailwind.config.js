@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "koding-kombat": "url('/assets/background.webp')"
+      }
+    },
   },
   plugins: [require('daisyui')],
 }
